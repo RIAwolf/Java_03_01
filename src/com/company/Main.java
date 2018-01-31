@@ -13,7 +13,15 @@ public class Main {
         * ir po to parašytų ar šis skaičius yra lyginis ar ne lyginis.
         * Užuomina panaudokite % operatoriu.
         * */
+        System.out.println("Iveskite sveika skaiciu");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
 
         LyginisNelyginis objektas = new LyginisNelyginis();
+
+        objektas.setA(a);
+
+        System.out.println("Ivesta skaicius: "+objektas.getA());
+        objektas.skaiciuok();
     }
 }
